@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+nav{
+    height: 70px;
+    background-color: salmon;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+padding-top: 25px;
+}
+nav ul li{
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+}
+nav ul li a{
+    text-decoration: underline;
+}
+section{
+    background-color:palegoldenrod;
+}
+section h1{
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 40px;
+    font-weight: 600;
+    color: red;
+}
+.hall-1,.hall-2,.hall-4{
+    width: 80%;
+    margin: 60px auto 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap: 30px;
+}
+
+.hall-1 img,.hall-2 img{
+    width: 100%;
+    height:50vh;
+}
+.hall-1 img:hover{
+    cursor: pointer;
+    transform: scale(0.8)  rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136,0.2);
+}
+
+.hall-2 img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #eedf89;
+    transform: scale(-1);
+    transition: all 5s ease ;
+ }
+
+
+ .hall-3{
+    width: 80%;
+    margin: 60px auto 50px;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap: 30px;
+}
+ .hall-3  a {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.hall-3 a:hover {
+    transform: scale(1.03);
+}
+
+.hall-3  img {
+    width: 100%;
+    height:50vh;
+    display: block;
+}
+
+.hall-4 img{
+    width: 100%;
+    height:50vh;
+}
+.hall-4 img:hover{
+    cursor: pointer;
+ transform: scale(1.2);
+ }
